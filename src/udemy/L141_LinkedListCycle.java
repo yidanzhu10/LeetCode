@@ -21,7 +21,7 @@ public class L141_LinkedListCycle {
         ListNode slow = head;
         ListNode fast = head;
         while (fast != null && fast.next != null) {
-            fast = fast.next.next;
+            fast = fast.next.next; // moves two steps every time
             slow = slow.next;
             if (fast == slow) {
                 return true;
