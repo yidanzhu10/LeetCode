@@ -10,7 +10,7 @@ public class L19_RemoveNthNodeFromEndOfNode {
 
         while(right.next != null) {
             right = right.next;
-            if(n -- <= 0){ //corner case
+            if(n -- <= 0){ // space the left and right pointer
                 left = left.next;
             }
         }
