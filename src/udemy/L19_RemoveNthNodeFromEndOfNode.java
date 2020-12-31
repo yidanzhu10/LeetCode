@@ -3,7 +3,7 @@ package udemy;
 public class L19_RemoveNthNodeFromEndOfNode {
     public ListNode removeNthFromEnd(ListNode head, int n) {
 
-        ListNode dummy = new ListNode(-1);
+        ListNode dummy = new ListNode(-1); // for the case that only contains one node
         dummy.next = head;
         ListNode left = dummy;
         ListNode right = dummy;
