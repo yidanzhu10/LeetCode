@@ -1,8 +1,5 @@
 package udemy;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class L344_ReverseAString {
 
     public static void reverseString(char[] s) {
