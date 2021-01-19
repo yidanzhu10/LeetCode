@@ -16,5 +16,5 @@ public class L1313_DecompressRLEList {
             out[i] = decompressList.get(i);
         }
         return out;
-    }
+
 }
