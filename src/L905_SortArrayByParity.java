@@ -14,4 +14,23 @@ public class L905_SortArrayByParity {
         }
         return ans;
     }
+    public int[] sortArrayByParity2(int[] A) {
+        int len = A.length;
+        if(len == 1) return A;
+        int w = 0;
+        for(int r = 1; r < len; r ++) {
+            if(A[w] % 2 != 0) {
+                if(A[r] % 2 == 0) {
+                    int temp = 0;
+                    temp = A[w];
+                    A[w] = A[r];
+                    A[r] = temp;
+                    w ++;
+                }
+                continue;
+            }
+            if(A[w] % 2 == 0) w ++;
+        }
+        return A;
+    }
 }
