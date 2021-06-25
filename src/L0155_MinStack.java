@@ -15,7 +15,9 @@ class MinStack {
     public void push(int val) {
         if(val <= min) {
             stack.push(min);
+            //push the current min val
             min = val;
+            // update the min val
         }
         stack.push(val);
     }
